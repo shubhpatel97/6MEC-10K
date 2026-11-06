@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "crest",
+    "slug": "crest",
+    "scheme": "crest",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0b0b0b",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.crest.wardrobe",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "crest reads the photos you choose to find garments. your photos stay on this device."
+      }
+    },
+    "android": {
+      "package": "com.crest.wardrobe",
+      "predictiveBackGestureEnabled": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0b0b0b",
+        "monochromeImage": "./assets/monochrome-icon.png"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "crest reads the photos you choose to find garments. your photos stay on this device."
+        }
+      ]
+    ]
+  }
+}

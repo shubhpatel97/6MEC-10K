@@ -1,0 +1,48 @@
+{
+  "name": "crest",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web",
+    "native": "expo start --go",
+    "native:tunnel": "expo start --go --tunnel",
+    "export:web": "expo export --platform web",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/stylist/stylist.test.ts src/extraction/scan.test.ts src/extraction/segment.test.ts",
+    "assets": "node scripts/make-assets.mjs",
+    "web:replit": "expo start --web --host lan --port 3000",
+    "lint": "expo lint"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "base64-js": "^1.5.1",
+    "expo": "~58.0.22",
+    "expo-constants": "~58.0.14",
+    "expo-image-manipulator": "~58.0.16",
+    "expo-image-picker": "~58.0.10",
+    "expo-linking": "~58.0.15",
+    "expo-sensors": "~58.0.4",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-svg": "15.16.0",
+    "react-native-web": "^0.21.4",
+    "upng-js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~58.0.4",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}
