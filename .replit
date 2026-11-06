@@ -1,0 +1,6 @@
+# crest — Expo web preview for Replit
+run = "npm run web:replit"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
